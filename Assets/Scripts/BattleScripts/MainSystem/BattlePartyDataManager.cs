@@ -10,7 +10,9 @@ public class BattlePartyDataManager : MonoBehaviour
     public List<CharacterBattleData> partyMembers;
 
     [HideInInspector] public Dictionary<CharacterName, int> currentHP;  // runtime HP
+    // [HideInInspector] public Dictionary<CharacterBattleData, int> currentHP;  // runtime HP
     [HideInInspector] public Dictionary<CharacterName, int> currentJuice;  // runtime juice
+    // [HideInInspector] public Dictionary<CharacterBattleData, int> currentJuice;  // runtime juice
 
     // used for debug sliders in editor
     [HideInInspector] public List<int> initialHP;

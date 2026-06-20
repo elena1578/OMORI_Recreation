@@ -122,6 +122,8 @@ public class BattleActionData : ScriptableObject
 
 
     #region Damage Calcs
+    // rather than having this as a large case switch, can switch this to a virtual & have unique calcs
+    // become child classes that override this method
     public int CalculateDamage(BattleActor actor, BattleActor target, out bool didCrit)
     {
         didCrit = false;
