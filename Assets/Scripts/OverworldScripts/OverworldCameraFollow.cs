@@ -94,9 +94,14 @@ public class OverworldCameraFollow : MonoBehaviour
         float targetX = target.position.x;
         float targetY = target.position.y;
 
+#if !UNITY_WEBGL
         float clampedX = Mathf.Clamp(targetX, minX + camHalfWidth, maxX - camHalfWidth);
         float clampedY = Mathf.Clamp(targetY, minY + camHalfHeight, maxY - camHalfHeight);
-
+#else
+        // WebGL has issues w/ regular camera bound sizing, so size down a bit
+        float clampedX = Mathf.Clamp(targetX, minX + camHalfWidth, maxX - camHalfWidth) * 0.75f;
+        float clampedY = Mathf.Clamp(targetY, minY + camHalfHeight, maxY - camHalfHeight) * 0.75f;
+#endif
         transform.position = new Vector3(clampedX, clampedY, transform.position.z) + shakeOffset;
     }
 }
