@@ -16,18 +16,18 @@ Controls are as follows:
 
 --- General (Overworld & Battle) ---
 
-Hold Escape: Quit
-F11: Fullscreen
+Hold Escape: Quit, 
+F11: Fullscreen.
 
 --- Overworld ---
 
-WASD/Arrow Keys: Move
-Shift/Control (press/toggle on/off): Sprint
-E: Interact
+WASD/Arrow Keys: Move, 
+Shift/Control (press/toggle on/off): Sprint, 
+E: Interact.
 
 --- Battle ---
 
-Point and click with mouse: Select
-Escape, Backspace, or Delete: Back
+Point and click with mouse: Select, 
+Escape, Backspace, or Delete: Back.
 
 This project is a non-commercial educational recreation of systems inspired by OMORI. All original characters, art, music, and intellectual property belong to their respective owners.
